@@ -1,0 +1,152 @@
+.trust-badges-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.trust-badge-group {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    flex-wrap: nowrap;
+    /* keep them in a single line */
+    box-sizing: border-box;
+    gap: 10px;
+    /* add space between badges */
+}
+
+.trust-badge {
+    flex: 1;
+    /* makes each badge grow equally */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 0;
+    /* allow shrinking if needed */
+}
+
+.separator {
+    width: 1px;
+    height: auto;
+    background-color: rgb(230, 230, 230);
+}
+.trustHeading{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.trustparagraph{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(219, 219, 219);
+}
+
+/* On very large screens, still stretch full width */
+@media (min-width: 1200px) {
+    .trust-badge {
+        flex: 1;
+    }
+}
+
+
+.trust-badges {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.trust-badges-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.trust-badge-group {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trust-badge-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.trust-badge {
+    margin-bottom: 1rem;
+}
+
+.trustHeading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.trustparagraph {
+    font-size: 1rem;
+    color: inherit;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="color"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+button {
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:last-of-type {
+    background-color: #999;
+}
+
+button:last-of-type:hover {
+    background-color: #777;
+}
+
+.trust-badge-colors {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.trust-badge-colors input[type="color"] {
+    padding: 0;
+    width: 48%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+/* AddProductSlide.css */
+
+.add-slide-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+}
+
+.form-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="color"],
+form select,
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input[type="color"] {
+    height: 50px;
+    padding: 5px;
+}
+
+form input[type="submit"] {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #2575fc;
+}
+
+form select {
+    background: #f9f9f9;
+}

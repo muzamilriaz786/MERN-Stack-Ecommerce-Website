@@ -1,0 +1,135 @@
+
+:root {
+    /* Neutrals */
+    --white: #ffffff;
+    --black: #000000;
+    --gray-light: #f5f5f5;
+    --gray: #cccccc;
+    --gray-dark: #7d7d7d;
+    --charcoal: #333333;
+    --ivory: #fffff0;
+    --beige: #f5f5dc;
+    --taupe: #483c32;
+    --slate: #708090;
+
+    /* Pastels */
+    --pastel-pink: #ffd1dc;
+    --pastel-orange: #ffdab9;
+    --pastel-yellow: #fffacd;
+    --pastel-green: #d0f0c0;
+    --pastel-blue: #aec6cf;
+    --pastel-purple: #c3b1e1;
+    --pastel-mint: #bdfcc9;
+    --pastel-peach: #ffe5b4;
+    --pastel-lilac: #e6e6fa;
+    --pastel-aqua: #b2ffff;
+
+    /* Vibrant & Bright */
+    --vibrant-red: #ff1744;
+    --vibrant-orange: #ff9100;
+    --vibrant-yellow: #ffea00;
+    --vibrant-green: #00e676;
+    --vibrant-cyan: #00e5ff;
+    --vibrant-blue: #2979ff;
+    --vibrant-purple: #d500f9;
+    --vibrant-pink: #ff4081;
+    --vibrant-lime: #c6ff00;
+    --vibrant-indigo: #651fff;
+
+    /* Dark & Moody */
+    --dark-red: #8b0000;
+    --dark-orange: #ff8c00;
+    --dark-gold: #b8860b;
+    --dark-green: #006400;
+    --dark-teal: #008080;
+    --dark-blue: #00008b;
+    --dark-purple: #4b0082;
+    --dark-pink: #8b008b;
+    --dark-brown: #5c4033;
+    --dark-gray: #2f4f4f;
+
+    /* Metallics */
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
+    --copper: #b87333;
+    --rose-gold: #b76e79;
+    --platinum: #e5e4e2;
+    --steel: #4682b4;
+    --chrome: #e0e0e0;
+    --pewter: #99aabb;
+    --brass: #b5a642;
+
+    /* Earthy & Natural */
+    --forest-green: #228b22;
+    --olive: #808000;
+    --moss: #8a9a5b;
+    --sage: #bcb88a;
+    --terracotta: #e2725b;
+    --sand: #c2b280;
+    --clay: #b66a50;
+    --ochre: #cc7722;
+    --maroon: #800000;
+    --chocolate: #7b3f00;
+
+    /* Trendy & Modern */
+    --midnight: #191970;
+    --navy: #000080;
+    --blush: #de5d83;
+    --coral: #ff7f50;
+    --seafoam: #93e9be;
+    --periwinkle: #ccccff;
+    --mustard: #ffdb58;
+    --salmon: #fa8072;
+    --mint: #98ff98;
+    --sky: #87ceeb;
+
+    /* Futuristic & Neon */
+    --neon-pink: #ff6ec7;
+    --neon-green: #39ff14;
+    --neon-blue: #1f51ff;
+    --neon-yellow: #ffff33;
+    --neon-orange: #ff9933;
+    --neon-purple: #9d00ff;
+    --neon-cyan: #00ffff;
+    --neon-lime: #bfff00;
+    --neon-red: #ff073a;
+    --neon-magenta: #ff00ff;
+
+    /* Soft & Elegant */
+    --peach: #ffe5b4;
+    --apricot: #fbceb1;
+    --lavender: #e6e6fa;
+    --dusty-rose: #dca6a6;
+    --powder-blue: #b0e0e6;
+    --cream: #fffdd0;
+    --light-sage: #cfcfc4;
+    --baby-blue: #89cff0;
+    --buttercream: #f8f0e3;
+    --mauve: #e0b0ff;
+
+    /* Deep & Jewel Tones */
+    --emerald: #50c878;
+    --ruby: #e0115f;
+    --sapphire: #0f52ba;
+    --amethyst: #9966cc;
+    --topaz: #ffc87c;
+    --garnet: #8b0000;
+    --jade: #00a86b;
+    --onyx: #353839;
+    --aquamarine: #7fffd4;
+    --turquoise: #40e0d0;
+}
+
+.navbar{
+    background-color:var(--baby-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks{
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+    gap: 20px;
+}
