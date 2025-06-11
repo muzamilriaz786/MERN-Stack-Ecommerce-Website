@@ -1,6 +1,8 @@
 import { Navbar } from "../components/navbar"; 
 import ShowProductSlider from "../components/showSlideProducts";
 import ShowTrustBadges from "../components/Hero/showTrustBadges";
+import ProductList from "../components/products/componentsList";
+
 function Home() {
 
     return (
@@ -8,6 +10,7 @@ function Home() {
         <Navbar />
         <ShowProductSlider />
         <ShowTrustBadges />
+        <ProductList />
       </div>
     );
 }

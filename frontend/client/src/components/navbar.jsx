@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FiShoppingBag, FiUser, FiMenu, FiX } from "react-icons/fi";
+import { FaUserPlus } from "react-icons/fa";
 import { FaPepperHot } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css"; // Create this CSS file for styling
@@ -38,7 +39,7 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="nav-links">
-          <Link to="/home" className="nav-link">
+          <Link to="/" className="nav-link">
             Home
           </Link>
           <Link to="/shopping" className="nav-link">
@@ -48,12 +49,15 @@ export const Navbar = () => {
             Perfume List
           </Link>
           <div className="nav-icons">
-            <Link to="/cart" className="icon-link">
+            <Link to="/CartList" className="icon-link">
               <FiShoppingBag />
               <span className="cart-count">0</span>
             </Link>
             <Link to="/login" className="icon-link">
               <FiUser />
+            </Link>
+            <Link to="/register" className="icon-link">
+              <FaUserPlus />
             </Link>
           </div>
         </div>

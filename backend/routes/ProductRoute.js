@@ -5,11 +5,33 @@ import {
   getProducts,
   deleteProducts,
   updateProducts,
+  getProductsById,
 } from "../controllers/ProductControllers.js";
 const router = express.Router();
+import {isAuthenticated} from '../middleware/isLoginAuth.js'
 
-router.post("/upload-product", upload.single("image"), saveProducts);
+router.post("/upload-product",isAuthenticated, upload.fields([
+  { name: "image", maxCount: 1 },        // main product image
+  { name: "colorImages", maxCount: 20 }, // color variant images
+]),
+(req, res, next) => {
+  console.log(req.files, "files received");
+  next();
+  }, saveProducts);
+
 router.get("/products", getProducts);
-router.put("/updateProducts/:id",upload.single('image'), updateProducts);
+
+router.put("/updateProducts/:id",upload.fields([
+  { name: "image", maxCount: 1 },        // main product image
+  { name: "colorImages", maxCount: 20 }, // color variant images
+]),
+(req, res, next) => {
+  console.log(req.files, "files updated");
+  next();
+  }, updateProducts);
+
 router.delete("/deleteProducts/:id", deleteProducts);
 export default router;
+
+
+router.get("/products/:id", getProductsById);
